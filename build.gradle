@@ -1,0 +1,33 @@
+plugins {
+    id 'java' // 자바
+    id 'org.springframework.boot' version '3.5.4' // 스프링부트 버전
+    id 'io.spring.dependency-management' version '1.1.7'  // 스프링 의존성 버전
+}
+
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web' // 스프링부트 웹 설치(단, 인터넷 가능 환경이어야 함)
+    runtimeOnly 'com.mysql:mysql-connector-j' // MY-SQL JDBD 자동 연결 라이브러리 설치 지원
+    implementation "org.apache.tomcat.embed:tomcat-embed-jasper"// jsp 라이브러리 설치
+    compileOnly 'org.projectlombok:lombok' // lombok 설치 라이브러리
+    annotationProcessor 'org.projectlombok:lombok' // lombok 라이브러리
+    // testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

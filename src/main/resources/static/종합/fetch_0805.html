@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch</title>
+</head>
+<body>
+    <h3>스프링 프로젝트는 자동으로 HTML 파일의 경로를 생성한다.</h3>
+    <h4>조건 : 프로젝트 폴더 내 -> src > main > resource > static  </h4>
+    <h5>URL(경로) : localhost:8080/종합/fetch_0805.html</h5>
+
+    <h5>TalendAPI 대신 실무적인 비동기 통신으로 처리하기 :  fetch </h5>
+    <button onclick="boardWrite()">등록실행</button>
+    <button onclick="boardPrint()">조회실행</button>
+    <button onclick="boardUpdate()">수정실행</button>
+    <button onclick="boardDelete()">삭제실행</button>
+    <!--
+
+    is not defined : 1. 연동 실패 / 2. 함수명 오타 / 3. 함수없다. 함수를 못찾았다.
+
+    -->
+
+    <script src="fetch.js"></script>
+</body>
+</html>
