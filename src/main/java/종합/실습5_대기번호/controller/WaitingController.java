@@ -34,7 +34,7 @@ public class WaitingController {
     }// func end
 
     // 3. 특정조회
-    @GetMapping("/find")
+    @GetMapping("/view")
     public WaitingDto waitingFind(@RequestParam  int wno ){
         System.out.println("WaitingController.waitingFind");
         System.out.println("wno = " + wno);
@@ -43,7 +43,7 @@ public class WaitingController {
     }// func end
 
     // 3. 특정 삭제
-    @DeleteMapping("") // localhost:8080/board?wno=2, 경로 주의!!!
+    @DeleteMapping("") // localhost:8080/waiting?wno=2, 경로 주의!!!
     public boolean waitingDelete( @RequestParam int wno ){
         System.out.println("WaitingController.waitingDelete");
         System.out.println("wno = " + wno);
@@ -52,7 +52,7 @@ public class WaitingController {
     }// func end
 
     // 4. 특정 수정
-    @PutMapping("") // localhost:8080/board, 경로 주의!!!
+    @PutMapping("") // localhost:8080/waiting, 경로 주의!!!
     public boolean waitingUpdate( @RequestBody WaitingDto waitingDto ){
         System.out.println("WaitingController.waitingUpdate");
         System.out.println("waitingDto = " + waitingDto);

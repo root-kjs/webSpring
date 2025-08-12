@@ -31,8 +31,8 @@ public class WaitingService {
     
     // 3. 특정조회
     public WaitingDto waitingFind( int wno ){
-        System.out.println("WaitingService.waitingView");
         System.out.println("wno = " + wno);
+        System.out.println("WaitingService.waitingFind");
         WaitingDto result = waitingDao.waitingFind(wno);
         return result;
     }//func end

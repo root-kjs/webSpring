@@ -10,4 +10,4 @@
 <a href="index.jsp">홈</a> <br/>
 <a href="write.jsp">대기등록</a> <br/>
 <a href="list.jsp">대기현황</a> <br/>
-<a href="view.jsp">(특정대기) 상세조회/삭제/수정</a>
+<a href="view.jsp">상세조회/삭제/수정</a>

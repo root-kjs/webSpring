@@ -3,11 +3,12 @@
 
     <h3>식당대기 상세조회</h3>
     <div>
-        휴대폰번호 : <input type="text" class="wphone" value="" /><br/>
-        대기인원수 : <input type="number" class="wcount" value="" /><br/>
-        <button onclick="deleteWating();" type="button">삭제</button>
-        <button onclick="updateWating();" type="button">수정</button>
+        휴대폰번호 : <span class="wphoneBox"></span><br/>
+        대기인원수 : <span class="wcountBox"></span><br/>
+
+        <button onclick="updateView()" type="button">수정</button>
+        <button onclick="deleteWaiting()" type="button">삭제</button>
 
     </div>
-<script src="view.js"></script>
+<script src="viewWaiting.js"></script>
 <jsp:include page = "footer.jsp"></jsp:include>
