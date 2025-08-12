@@ -1,4 +1,4 @@
-package 종합.실습5_0812.controller;
+package 종합.게시판11.controller;
 
 import org.springframework.web.bind.annotation.*;
 import 종합.예제11_0805.model.dao.BoardDao;

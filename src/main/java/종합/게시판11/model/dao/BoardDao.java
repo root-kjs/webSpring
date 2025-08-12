@@ -1,4 +1,4 @@
-package 종합.실습5_0812.model.dao;
+package 종합.게시판11.model.dao;
 
 import 종합.예제11_0805.model.dto.BoardDto;
 
@@ -15,7 +15,7 @@ public class BoardDao {
     public static BoardDao getInstance(){ return instance; }
 
     // DB 연동
-    private String db_url = "jdbc:mysql://localhost:3306/exam11";
+    private String db_url = "jdbc:mysql://localhost:3306/waitingDB_0812";
     private String db_user = "root";
     private String db_password = "1234";
     private Connection conn;
@@ -23,7 +23,8 @@ public class BoardDao {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection( db_url , db_user , db_password );
-        }catch (Exception e ){ System.out.println(e);   }
+            System.out.println("DB연동 성공!");
+        }catch (Exception e ){ System.out.println(e);  }
     }//func end
 
     // (1) 등록 기능 구현

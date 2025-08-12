@@ -1,4 +1,4 @@
-console.log("대기등록");
+console.log("등록");
 // 동기식 fetch
 const add = async() => {
     //1. 입력값 가져오기
@@ -20,7 +20,7 @@ const add = async() => {
     }
 
     //2. response 응답대기
-    const response = await fetch("/waiting/write" , option );
+    const response = await fetch("/waiting/add" , option );
 
     //3. 데이터 전송 결과 
     const data = await response.json( );

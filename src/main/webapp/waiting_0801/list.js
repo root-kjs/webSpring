@@ -21,7 +21,7 @@ const list = async() =>{
         const waiting = data[i];
         html += `<tr>
             <td>${waiting.wno}</td>
-            <td><a href="/waiting/view.jsp?wno=${waiting.wno}">${waiting.wphone}</a></td>
+            <td>${waiting.wphone}</td>
             <td>${waiting.wcount}</td>
         </tr>
         ` 

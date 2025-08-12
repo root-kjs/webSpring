@@ -1,4 +1,4 @@
-package 종합.실습5_0812;
+package 종합.게시판11;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

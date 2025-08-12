@@ -1,4 +1,4 @@
-package 종합.실습5_0812.model.dto;
+package 종합.게시판11.model.dto;
 
 public class BoardDto {
     //멤버변수
