@@ -5,9 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import 종합.실습5_대기번호.model.dto.WaitingDto;
 import 종합.실습5_대기번호.service.WaitingService;
 
-import java.util.ArrayList;
 import java.util.List;
-
 
 @RequestMapping("/waiting")
 @RestController  // 역할 : [주] HTTP 통신(요청/응답) , 매개변수/반환 타입 관리 변환 , VIEW 와 SERVICE 중계
@@ -16,7 +14,7 @@ public class WaitingController {
     @Autowired private WaitingService waitingService; // 싱글톤 대신에 사용 가능. Service 호출!
 
     // 1. 등록
-    @PostMapping("/write")
+    @PostMapping// http 메소드가 다르면 경로 같아도 됨.
     public boolean waitingWrite( @RequestBody WaitingDto waitingDto ){
         System.out.println("WaitingController.waitingWrite");
         System.out.println("waitingDto = " + waitingDto);
@@ -25,7 +23,7 @@ public class WaitingController {
     }// func end
 
     // 2. 전체조회
-    @GetMapping("/list")
+    @GetMapping
     public List<WaitingDto> waitingList(  ){
         System.out.println("WaitingController.waitingList");
         System.out.println("waitingService = " + waitingService);
@@ -43,7 +41,7 @@ public class WaitingController {
     }// func end
 
     // 3. 특정 삭제
-    @DeleteMapping("") // localhost:8080/waiting?wno=2, 경로 주의!!!
+    @DeleteMapping // localhost:8080/waiting?wno=2, 경로 주의!!!
     public boolean waitingDelete( @RequestParam int wno ){
         System.out.println("WaitingController.waitingDelete");
         System.out.println("wno = " + wno);
@@ -52,7 +50,7 @@ public class WaitingController {
     }// func end
 
     // 4. 특정 수정
-    @PutMapping("") // localhost:8080/waiting, 경로 주의!!!
+    @PutMapping // localhost:8080/waiting, 경로 주의!!!
     public boolean waitingUpdate( @RequestBody WaitingDto waitingDto ){
         System.out.println("WaitingController.waitingUpdate");
         System.out.println("waitingDto = " + waitingDto);

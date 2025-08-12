@@ -3,8 +3,8 @@
 
     <h3>식당대기등록</h3>
     <div>
-        휴대폰번호 : <input type="text" class="wphone" value="" /><br/>
-        대기인원수 : <input type="number" class="wcount" value="" /><br/>
+        휴대폰번호 : <input type="text" class="wphoneInput" value="" /><br/>
+        대기인원수 : <input type="number" class="wcountInput" value="" /><br/>
         <button onclick="add();" type="button">등록</button>
 
     </div>

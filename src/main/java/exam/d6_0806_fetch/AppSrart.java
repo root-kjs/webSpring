@@ -1,4 +1,4 @@
-package exam.d6_fetch_0806;
+package exam.d6_0806_fetch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

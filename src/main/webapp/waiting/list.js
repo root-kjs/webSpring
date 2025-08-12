@@ -5,7 +5,7 @@ const list = async() =>{
     console.log("대기조회 실행");
 
     //1. 데이터 가져오기(비동기 http통신)
-    const response = await fetch( "/waiting/list" ,  { method : "GET"} );
+    const response = await fetch( "/waiting" ,  { method : "GET"} );
 
     //2. fetch data
     const data = await response.json();

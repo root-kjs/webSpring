@@ -6,7 +6,7 @@
     <title>식당대기 프로그램</title>
 </head>
 <body>
-<h3>메뉴</h3>
+<%--<h3>메뉴</h3>--%>
 <a href="index.jsp">홈</a> <br/>
 <a href="write.jsp">대기등록</a> <br/>
 <a href="list.jsp">대기현황</a> <br/>

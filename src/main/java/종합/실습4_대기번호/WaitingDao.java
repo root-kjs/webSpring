@@ -1,4 +1,4 @@
-package 종합.실습4;
+package 종합.실습4_대기번호;
 
 import lombok.Getter;
 
